@@ -1,0 +1,541 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #192252;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0px auto;   
+}
+
+img {
+    border-radius: 4px;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -0.01em;
+    color: #192252;
+}
+
+.header {
+    margin: 60px;
+    text-align: center;
+}
+
+.header__container {
+    display: flex;
+}
+
+.header__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 356px 0px 343px;
+    gap: 20px;
+}
+
+
+.menu__item {
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+}
+
+.menu__item::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background:#0B265A;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+    }
+
+.menu__item:hover::after {
+    width: 100%;
+}
+
+.menu__link {
+    color: #192252;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px;
+    background: #0E1734;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 500;
+}
+
+.button:hover{
+    background-color: #5e6ea3; 
+    transition: 0.7s;
+
+}
+
+.reservation__container {
+    position: relative;
+}
+
+.section__reservation   {
+    min-height: 845px;
+}
+
+
+.reservation__text {
+    position: absolute;
+    top: 215px;
+    width: 587px;
+    height: 332px;
+}
+
+.reservation__title > h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #192252;
+}
+
+.reservation__infromation {
+    padding-top: 24px;
+    max-width: 485px;
+}
+
+p {     
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #848FAC;
+}
+
+.reservation__button {
+    padding-top: 32px;
+    display: inline-block;
+}
+
+.reservation__pictures {
+   position:absolute;
+   top: 60px;
+   right: 0px;
+   display: block;
+}
+
+.reservation__pictures_second {
+    padding-top: 100px;
+}
+
+.norwayhotel__container {
+    position: relative;
+    min-height: 736px;
+    display: flex;
+    
+}
+
+.norwayhotel__maininfo {
+    width: 690px;
+    height: 366px;
+    padding-top: 185px;
+    padding-left: 126px;
+}
+
+.norwayhotel__image {
+    padding-top: 80px;
+}
+
+.norwayhotel__infromation {
+    padding-top: 24px;
+}
+
+.norwayhotel_secondinformation {
+    padding-top: 16px;
+}
+
+.norwayhotel_button {
+    padding-top: 32px;
+    display: inline-block;
+}
+
+.activities__container {
+    min-height: 960px;
+}
+
+.activities__infromation {
+    padding: 80px 106px 0px 0px;
+    display: flex;
+    align-items: center;
+    }
+
+.activities__text {
+    max-width: 584px;
+   
+}
+
+.activities__images {
+    padding-left: 126px;
+}
+
+.activities__title {
+    padding-bottom: 24px;
+}
+
+.food__infromation {
+    display: flex;
+    padding-top: 32px;
+    align-items:center;
+}
+
+.food__inside {
+    padding-left: 126px;
+    width: 700px;
+}
+.food__title {
+    padding-bottom: 24px;
+}
+
+.chooseroom__container {
+    min-height: 1176px;
+}
+
+.chooseroom__titleinfo {    
+    padding-top: 80px;
+    width: 588px;
+    margin: auto;
+    text-align: center;
+}
+
+.chooseroom__information {
+    padding-top: 24px; 
+}
+
+.chooseroom__button {
+    display: inline-block;
+    padding-top: 32px;
+}
+
+.catalogueroom__choose {
+    display: flex;
+    margin: auto;
+    padding-top: 80px;
+    gap: 24px;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.catalogueroom__infromation {
+    font-size: 18px;
+}
+
+.catalogueroom__title {
+    padding-top: 32px;
+}
+
+.catalogueroom__infromation {
+    padding-top: 16px;
+}
+
+.catalogueroom__link {
+    padding-top:32px;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.room_link {
+    position: relative;
+}
+
+.room_link::after {
+    content: '';
+    height: 1.5px;
+    width: 0;
+    background:#0B265A;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+    }
+
+.room_link:hover::after {
+    width: 100%;
+}
+
+
+
+.contactuspage__container {
+    min-height: 596px;
+}
+
+.contactuspage__maininfo {
+    display: flex;   
+    
+}
+
+.contactuspage__info {
+    width: 407px;
+    
+}
+
+.contactuspage__smalltitle >p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #424F7B;
+    padding-bottom: 12px;
+    padding-top: 162px;
+
+}
+
+.contactuspage__title {
+    padding-bottom: 24px;
+}
+
+.contactuspage__button {
+    display: inline-flex;
+    padding-top: 32px;
+}
+
+.contactuspage__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 12px;
+    padding-left: 20px;
+    
+}
+
+a {
+    color: #0E1734;
+}
+
+.contactus__link:hover {
+    text-decoration: underline;
+}
+
+.contactuspage__accordion {
+    padding-top: 112px;
+    padding-left: 200px;
+    margin: auto;
+}
+
+/* accodion */
+
+.contactuspage__accordion {
+    margin-top: 40px;
+}
+
+h4 {
+    color: #424F7B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+
+.accordion {
+    background-color: #fff;
+    cursor: pointer;
+    padding:  20px;
+    width: 588px;
+    border: none;
+    text-align: left;
+    position: relative;
+    transition: 0.4s;
+}
+
+.active {
+    padding: 10px 20px;
+}
+
+.active, .accordion:hover {
+    background-color: #fff;
+    
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #FF620A;
+    font-size: 25px;  
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+
+.active:after {
+    content: "\2212";
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
+.panel {
+    width: 500px;
+    margin: 0 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.customers__container {
+    min-height: 627px;
+}
+
+.customers__title {
+    padding-top: 80px;
+    text-align: center;
+}
+
+
+.swiper-slide {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.customer__text { 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+
+.customer__name >p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #192252;
+}
+
+.swiper-wrapper {
+    padding-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+    background-color:#FAB047;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+}
+
+footer {
+    height: 586px;
+    background-color: #0B265A;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.logo__titles > h2 {
+    color: #fff;
+}
+
+.social__links {
+padding: 150px 0;
+}
+
+.info__text > p {
+    width: 206px;
+    height: 94px;
+    padding-top: 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #D9DBDE;
+
+    }
+
+.networklinks {
+    display: inline-block;
+    padding-top: 32px;
+    
+}
+
+.instagram, .facebook {
+    padding-left: 24px;
+}
+
+.global__links {
+    display: flex;
+    padding-top: 150px;
+    padding-left: 400px;
+}
+
+.footer_link:hover {
+    text-decoration: underline;
+}
+
+.reservation__links, .contact__links {
+    padding-left: 100px;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+
+.footer_link {
+    padding-top: 24px;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D9DBDE;;
+}
+
+
+
+
+
+
